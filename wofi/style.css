@@ -1,0 +1,34 @@
+#window {
+	font-size: 11px;
+        background-color: #000000;
+	color: #FFFFFF;
+}  
+#inner-box {
+	margin: 5px;
+	padding: 10px;
+	border: none;
+	background-color: transparent;
+}
+#outer-box {
+	margin: none;
+	border: none;
+	background-color: #000000;
+}
+#text {
+	margin: 5px;
+	border: none;
+	color: #9999ff;
+}
+#entry:selected {
+	background: linear-gradient(-90deg, #D0F2F9, #DFB1D5);
+	border-radius: 5px;
+}
+image {
+	margin-left: .15em;
+	margin-right: .15em;
+}
+#input {
+	background-color: #000000;
+        color: #9999ff;
+	border-radius: 5px;
+}
