@@ -1,1 +1,6 @@
-
+mode=drun
+allow_images=true
+prompt=🌍 Applications (drun)
+height=30%
+width=40%
+location=center
