@@ -7,7 +7,7 @@
 	margin: 5px;
 	padding: 10px;
 	border: none;
-	background-color: transparent;
+	background-color: #000000;
 }
 #outer-box {
 	margin: none;
@@ -20,7 +20,7 @@
 	color: #9999ff;
 }
 #entry:selected {
-	background: linear-gradient(-90deg, #D0F2F9, #DFB1D5);
+	background: #2A1458;
 	border-radius: 5px;
 }
 image {
