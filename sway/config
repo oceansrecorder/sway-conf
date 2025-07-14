@@ -28,7 +28,7 @@ output 'Iiyama North America PLG2488H 0' {
 
 # i3-gaps
 # for_window [class="^.*"] border pixel 0
-gaps inner 4
+gaps inner 9
 gaps outer 2
 smart_gaps on
 default_border pixel 4
@@ -36,14 +36,14 @@ default_border pixel 4
 #set $borderwidth 1
 hide_edge_borders both
 
-set $opacity 0.9
+set $opacity 0.95
 for_window [class=".*"] opacity $opacity
 for_window [app_id=".*"] opacity $opacity
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/sascha/Pictures/yume2kki1.jpg fill
+output * bg /home/sascha/Pictures/yumenikki5.jpg fill
 #
 # Example configuration:
 #
