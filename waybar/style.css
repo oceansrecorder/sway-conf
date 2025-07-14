@@ -1,16 +1,16 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: Monospace;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 window#waybar {
-    background-color: #000000;
+    background-color: rgba(24, 21, 114, 0.6);
     border-bottom: #ff99ff;
-    color: #fcd9f8;
-    box-shadow: inset 0 -3px #fcd9f8;
+    color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
+    box-shadow: inset 0 -3px #5EABD6;
 }
 
 window#waybar.hidden {
@@ -65,8 +65,10 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: #9999ff;
-    box-shadow: inset 0 -3px #ff99ff;
+    color: #ff99ff;
+    background-color: transparent;
+    border: 4px solid #9999ff;
+    box-shadow: inset 0 -3px transparent;
 }
 
 #workspaces button.urgent {
@@ -332,4 +334,8 @@ label:focus {
 
 #privacy-item.audio-out {
     background-color: #0069d4;
+}
+
+#user {
+	padding: 0 7px;
 }
