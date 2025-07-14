@@ -6,7 +6,7 @@ if status is-interactive
     echo [Clouflare Warp...🔸⚡]
     warp-cli status
     echo [Profile... 💿☁️]
-    fastfetch --logo /home/sascha/Documents/cat.txt
+    fastfetch --logo /home/sascha/Documents/cat.txt --structure bios:cpu:gpu:display:os:wm:kernel:packages:shell
     echo ""
     df -h /dev/nvme0n1p4
     df -h /dev/nvme0n1p5
