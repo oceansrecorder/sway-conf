@@ -5,12 +5,22 @@
 }
 
 window#waybar {
-    background-color: rgba(24, 21, 114, 0.6);
     border-bottom: #ff99ff;
     color: #ffffff;
+    background-color: transparent;
     transition-property: background-color;
     transition-duration: .5s;
-    box-shadow: inset 0 -3px #5EABD6;
+    font-weight: bold;
+}
+window#waybar>box {
+    background:  linear-gradient(0.25turn, #200a24, #3c2252, #6facf5);
+    padding:3px;
+    border: 4px solid #F86DC0;
+    border-radius: 10px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    margin-right: 56px;
+    margin-left: 56px;
 }
 
 window#waybar.hidden {
@@ -39,8 +49,8 @@ button {
     /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -3px #fcd9f8;
     /* Avoid rounded borders under each button name */
-    border: none;
-    border-radius: 0;
+    border: 4px solid #A964B7; 
+    border-radius: 7px;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -56,8 +66,9 @@ button:hover {
 
 #workspaces button {
     padding: 0 5px;
-    background-color: transparent;
-    color: #ffffff;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 7px;
 }
 
 #workspaces button:hover {
@@ -65,10 +76,12 @@ button:hover {
 }
 
 #workspaces button.focused {
-    color: #ff99ff;
-    background-color: transparent;
-    border: 4px solid #9999ff;
-    box-shadow: inset 0 -3px transparent;
+    color: #fcd9f8;
+    padding: 0 10px;
+    background-color: #000000;
+    box-shadow: inset 0 -3px #5EABD6;
+    border: 4px solid #CA93CA;
+    border-radius: 7px;
 }
 
 #workspaces button.urgent {
@@ -119,6 +132,8 @@ button:hover {
 #clock {
     background-color: #fcd9f8;
     color: #000000;
+    border: 4px solid #181572;
+    border-radius: 7px;
 }
 
 #battery {
@@ -173,15 +188,17 @@ label:focus {
 }
 
 #cpu {
-    background-color: transparent;
+    background-color: #000000;
     color: #9999ff;
-    box-shadow: inset 0 -3px #9999ff;
+    border: 4px solid #9999ff;
+    border-radius: 7px;
 }
 
 #memory {
-    background-color: transparent;
+    background-color: #000000;
     color: #87cefa;
-    box-shadow: inset 0 -3px #87cefa;
+    border: 4px solid #87cefa;
+    border-radius: 7px; 
 }
 
 #disk {
@@ -193,9 +210,10 @@ label:focus {
 }
 
 #network {
-    background-color: transparent;
+    background-color: #000000;
     color: #ff99ff;
-    box-shadow: inset 0 -3px #ff99ff;
+    border: 4px solid #ff99ff;
+    border-radius: 7px; 
 }
 
 #network.disconnected {
@@ -203,9 +221,10 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: transparent;
+    background-color: #000000;
     color: #ffccff;
-    box-shadow: inset 0 -3px #ffccff;
+    border: 4px solid #D1B6F1;
+    border-radius: 7px; 
 }
 
 #pulseaudio.muted {
@@ -223,17 +242,25 @@ label:focus {
 }
 
 #custom-media {
-    background-color: #fcd9f8;
-    color: #2a5c45;
+    background-color: #000000;
+    color: #D1B6F1;
+    border: 4px solid #D1B6F1;
+    border-radius: 7px;
     min-width: 100px;
 }
 
 #custom-media.custom-spotify {
-    background-color: #66cc99;
+    background-color: #000000;
+    color: #D1B6F1;
+    border: 4px solid #D1B6F1;
+    border-radius: 7px;
 }
 
 #custom-media.custom-vlc {
-    background-color: #ffa000;
+    background-color: transparent;
+    color: #FFE9FF;
+    border: 4px solid #FFE9FF;
+    border-radius: 7px;
 }
 
 #temperature {
@@ -245,7 +272,9 @@ label:focus {
 }
 
 #tray {
-    background-color: transparent;
+    background-color: #000000;
+    border: 4px solid #9999ff;
+    border-radius: 7px;
 }
 
 #tray > .passive {
@@ -284,11 +313,13 @@ label:focus {
 }
 
 #language {
-    background: transparent;
+    background: #000000;
     color: #0392cf;
     padding: 0 5px;
     margin: 0 5px;
     min-width: 16px;
+    border: 4px solid #0392cf;
+    border-radius: 7px;
 }
 
 #keyboard-state {
@@ -338,4 +369,17 @@ label:focus {
 
 #user {
 	padding: 0 7px;
+	background-color: #181572;
+	border: 4px solid #B0D9EE;
+	color: #FFFFFF;
+	border-radius: 7px;
 }
+#clock {
+	font-size: 9px;
+}
+#custom-power {
+	background-color: #000000;
+    	border: 4px solid #9999ff;
+	border-radius: 7px;
+}
+	
